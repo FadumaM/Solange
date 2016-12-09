@@ -22,13 +22,16 @@
 .aseat,
 .attable
 {
+	font-family: 'Lusitana', serif;
+	font-size: 1.8em;
+	color: $secondary-color;
 	position: absolute;
-	width: 54px;
-	height: 200px;
+	width: 70px;
+	height: 220px;
 	line-height: 54px;
 
-	width: 8.1vh;
-	height: 30vh;
+	width: 14vh;
+	height: 40vh;
 
 	z-index: 100;
 	text-align: center;

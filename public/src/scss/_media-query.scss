@@ -352,7 +352,7 @@
 
 		.about .bg
 		{
-			background: #5a7169;
+			background: darken($primary-color, 30%);
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -423,6 +423,8 @@
 	{
 		position: absolute;
 	}
+
+
 }
 
 @media only screen and (min-width: 1024px)
@@ -517,7 +519,7 @@
 		height: 150px;
 		line-height: 40px;
 
-		width: 6.075vh;
+		width: 9vh;
 		height: 22.5vh;
 	}
 
@@ -538,7 +540,7 @@
 	}
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 768px)
 {
 	.ajax
 	{
@@ -549,7 +551,7 @@
 	.attable
 	{
 		position: fixed;
-		width: 27px;
+		width: 34px;
 		height: 100px;
 		line-height: 27px;
 	}
@@ -669,7 +671,7 @@
 	{
 		position: fixed;
 		visibility: hidden;
-		background: $secondary-color;
+		background: darken($primary-color, 30%);
 	}
 
 	.about .centered
@@ -698,5 +700,9 @@
 	{
 		padding: 0 15px;
 		max-width: none;
+	}
+	.aseat,
+	.attable{
+		font-size: 1em;
 	}
 }

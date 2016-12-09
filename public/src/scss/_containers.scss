@@ -19,6 +19,27 @@
 	transform: translate3d(0, 0, 0);
 }
 
+div#about-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.buy {
+    display: flex;
+    /* justify-content: space-around; */
+    /* height: 10vh; */
+    flex-direction: row;
+    a{
+    	margin: 10px;
+    }
+}
+
 	.mousehover .about-close
 	{
 		display: none;
@@ -142,7 +163,8 @@
 		transform: translate3d(0, 0, 0);
 	}
 
-	.left .img-holder .small-gallery
+	.left .img-holder .small-gallery,
+	.right .img-holder .small-gallery
 	{
 		left: 15px;
 	}

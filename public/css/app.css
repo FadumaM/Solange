@@ -1,4 +1,5 @@
 /* CSS RESET */
+@import url("https://fonts.googleapis.com/css?family=Lusitana");
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -106,12 +107,15 @@ a, a:hover, a:visited:hover, a:visited {
 
 .aseat,
 .attable {
+  font-family: 'Lusitana', serif;
+  font-size: 1.8em;
+  color: #797dd2;
   position: absolute;
-  width: 54px;
-  height: 200px;
+  width: 70px;
+  height: 220px;
   line-height: 54px;
-  width: 8.1vh;
-  height: 30vh;
+  width: 14vh;
+  height: 40vh;
   z-index: 100;
   text-align: center;
   display: block;
@@ -418,6 +422,30 @@ a.loading img {
   transform: translate3d(0, 0, 0);
 }
 
+div#about-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buy {
+  display: flex;
+  /* justify-content: space-around; */
+  /* height: 10vh; */
+  flex-direction: row;
+}
+
+.buy a {
+  margin: 10px;
+}
+
 .mousehover .about-close {
   display: none;
 }
@@ -523,7 +551,8 @@ a.loading img {
   transform: translate3d(0, 0, 0);
 }
 
-.left .img-holder .small-gallery {
+.left .img-holder .small-gallery,
+.right .img-holder .small-gallery {
   left: 15px;
 }
 
@@ -977,7 +1006,7 @@ strong {
     left: 50%;
   }
   .about .bg {
-    background: #5a7169;
+    background: #a0b7a0;
     position: absolute;
     top: 0;
     width: 100%;
@@ -1095,7 +1124,7 @@ strong {
     width: 40px;
     height: 150px;
     line-height: 40px;
-    width: 6.075vh;
+    width: 9vh;
     height: 22.5vh;
   }
   .aseat {
@@ -1112,14 +1141,14 @@ strong {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .ajax {
     min-height: 100%;
   }
   .aseat,
   .attable {
     position: fixed;
-    width: 27px;
+    width: 34px;
     height: 100px;
     line-height: 27px;
   }
@@ -1203,7 +1232,7 @@ strong {
   .about {
     position: fixed;
     visibility: hidden;
-    background: #ecefe7;
+    background: #a0b7a0;
   }
   .about .centered {
     opacity: 0;
@@ -1222,6 +1251,10 @@ strong {
   .centered {
     padding: 0 15px;
     max-width: none;
+  }
+  .aseat,
+  .attable {
+    font-size: 1em;
   }
 }
 
