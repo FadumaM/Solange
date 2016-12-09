@@ -1,0 +1,151 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body
+{
+	height: 100%;
+}
+
+body
+{
+	font: 16px/23px 'GT Sectra Fine', serif;
+	text-align: center;
+	background: $primary-color;
+	color: $font-color;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+	html.no-mousehover body
+	{
+		-webkit-text-size-adjust:none;
+	}
+
+p:not(:last-child),
+.home h1
+{
+	margin-bottom: 23px;
+}
+
+	.single-work h1
+	{
+		margin-bottom: 0;
+		display: inline-block;
+	}
+
+p:empty
+{
+	display: none;
+}
+
+a,
+a:visited
+{
+	color: #000;
+	cursor: pointer;
+}
+
+h2
+{
+	font-size: 21px;
+	line-height: 30px;
+}
+
+a,
+.layout-box .mask:before,
+.small-gallery a:before,
+.close span,
+.anna .mask span,
+.rosa .mask span,
+.fixed-caption
+{
+	-webkit-transition: opacity .25s ease-out, background .25s ease-out, color .25s ease-out, border-bottom .25s ease-out;
+	   -moz-transition: opacity .25s ease-out, background .25s ease-out, color .25s ease-out, border-bottom .25s ease-out;
+	        transition: opacity .25s ease-out, background .25s ease-out, color .25s ease-out, border-bottom .25s ease-out;
+}
+
+.small-gallery,
+.close
+{
+	-webkit-transition: -webkit-transform .25s ease-out;
+	   -moz-transition: transform .25s ease-out;
+	        transition: transform .25s ease-out;
+}
+
+body
+{
+	-webkit-transition: background .25s ease-out;
+	   -moz-transition: background .25s ease-out;
+	        transition: background .25s ease-out;
+}
+
+.img-holder
+{
+	overflow: hidden;
+}
+
+	.home .img-holder,
+	.img-holder .bg
+	{
+		background: #a4af9d;
+	}
+
+	.loaded.img-holder,
+	.loaded.bg
+	{
+		background: transparent;
+	}
+
+.img-holder img
+{
+	-webkit-transition: opacity .5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+	   -moz-transition: opacity .5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+		    transition: opacity .5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.img-holder,
+.bar
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+div.loading img,
+a.loading img
+{
+	opacity: 0;
+}
+
+.absolute
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.full,
+.cover-img
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.fullscreen
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
